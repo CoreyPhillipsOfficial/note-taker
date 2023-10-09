@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const dbPath = path.join(__dirname, './db.json');
+const { v4: uuidv4 } = require('uuid');
 
 // Get /api/notes
 function getData() {
@@ -11,7 +12,12 @@ function getData() {
 
 // Post /api/notes
 function writeData(notesArray) {
-    fs.writeFile(dbPath, JSON.stringify(notesArray, null, 2), () => {
+    const notesWithId = notesArray.map((note) => ({
+        id: uuidv4(),
+        ...note,
+    }));
+
+    fs.writeFile(dbPath, JSON.stringify(notesWithId, null, 2), () => {
         console.log('DB updated successfully!');
     });
 }
