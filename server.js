@@ -1,6 +1,6 @@
+const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const express = require('express');
 const path = require('path');
 const dbTools = require('./db/database');
 const notesDatabase = require('./db/db.json');
@@ -9,7 +9,7 @@ const fs = require('fs');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('./public'))
+app.use(express.static('public'))
 
 
 // // Returns one note object by type
