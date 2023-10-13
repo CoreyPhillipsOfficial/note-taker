@@ -1,6 +1,6 @@
 # note-taker
 
-## In this application, I created the backend for a note-taking application. The user inputs a title, and then the note they'd like to remember. The application stores the note in a .json file so that the note can be recalled later. The user may also delete a note, by clicking the trash button. This is beneficial for someone with a busy schedule who wants to take down notes to remember for later, and also delete notes as they see fit. 
+## In this application, I created the backend for a note-taking application. The user inputs a title, and then the note they'd like to remember. The application stores the note in a .json file so that the note can be recalled later. The user may also delete a note, by clicking the trash button. This is beneficial for someone with a busy schedule who wishes to store notes for later, and also delete notes as they see fit. 
 
 Link: <a href="https://intense-earth-26195-5badd8721698.herokuapp.com/">Note Taker</a> 
 
